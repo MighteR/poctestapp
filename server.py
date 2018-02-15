@@ -17,9 +17,9 @@ def index():
 
   return jsonify(
     status=200,
-    replies=[{
-      'type': 'text',
-      'content': 'The price of %s is %f BTC and %f USD' % (crypto_name, r.json()['BTC'], r.json()['USD'])
+    replies=[{ 
+      'type': 'text', 
+      'content': 'Roger that' 
     }]
   )
 
