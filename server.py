@@ -26,7 +26,7 @@ def index():
     }]
   )
 '''
-return jsonify(
+  return jsonify(
     status=200,
     replies=[{
       'type': 'text',
