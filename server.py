@@ -32,8 +32,8 @@ def index():
       'type': 'text',
       'content': 'The price of %s is :\n%f BTC, \n%f USD, and \n%f EUR.' % (crypto_name, r.json()['BTC'], r.json()['USD'], r.json()['EUR'])
     }]
-'''  )
-
+  )
+'''
 @app.route('/errors', methods=['POST'])
 def errors():
   print(json.loads(request.get_data()))
