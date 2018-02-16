@@ -25,7 +25,7 @@ def index():
       'content': 'https://noeljesse.com/wp-content/uploads/2017/09/89716241_thinkstockphotos-523060154.jpg'
     }]
   )
-'''  
+'''
 return jsonify(
     status=200,
     replies=[{
