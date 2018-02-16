@@ -21,10 +21,18 @@ def index():
   return jsonify(
     status=200,
     replies=[{
+      'type': 'picture',
+      'content': 'https://noeljesse.com/wp-content/uploads/2017/09/89716241_thinkstockphotos-523060154.jpg')
+    }]
+  )
+  
+'''  return jsonify(
+    status=200,
+    replies=[{
       'type': 'text',
       'content': 'The price of %s is :\n%f BTC, \n%f USD, and \n%f EUR.' % (crypto_name, r.json()['BTC'], r.json()['USD'], r.json()['EUR'])
     }]
-  )
+'''  )
 
 @app.route('/errors', methods=['POST'])
 def errors():
