@@ -9,6 +9,7 @@ print(port)
 
 @app.route('/', methods=['POST'])
 def index():
+  print(request.get_data());
   print(port)
   data = json.loads(request.get_data())
 
